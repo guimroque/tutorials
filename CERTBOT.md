@@ -16,7 +16,7 @@
     - 2.2: Execute `certbit`
         ````
         sudo apt install python3-certbot-nginx
-    ````
+        ````
 3. Configure nginx:
     - 3.1: Abra o arquivo `/etc/nginx/sites-enabled/default`
         ````
