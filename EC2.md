@@ -13,6 +13,12 @@
     sudo apt update
     sudo apt install git docker docker-compose nginx
     ````
+    - 5.1: Nessa etapa voce consegue acessar a máquina e ver a mensagem de boas vindas do nginx
+            - 5.1.1: acesse no navegador pelo IP elastico vinculado a máquina
+            - 5.1.2: também é possivel pingar a máquina pelo próprio terminal, e voce deve receber um html com as boas vindas do nginx
+                ````
+                    curl http://<IP_elastico>:80
+                ````
 6. Clone o repositório do git
 7. Dentro do repositório devem ter os arquivos docker
     - 7.1 Dockerfile: Deve conter instruções de execução e variáveis de ambiente
