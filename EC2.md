@@ -2,6 +2,13 @@
 ---
 
 1. Selecione uma AMI do tipo ubuntu
+    - Selecione um grupo de segurança que possuí as seguintes portas livres para todos os IP's (IPV6 -> ::/0 | IPV4 -> 0.0.0.0/0)
+    - As portas devem ser do protocolo tipo TCP, e acessíveis para endereços IPV6 e IPV4 (cadastre a mesma porta duas vezes, uma para IPV6 e outra IPV4)
+    - Portas necessárias:
+        - `80`
+        - `443`
+        - `22`
+        - `5472`[Se voce pretender usar um BD rodando pelo docker dentro do container, para que voce consiga acessar esse BD sem acessar a máquina via ssh]
 2. Baixe o .pem para conectar via ssh no container alocado
 3. Crie um IP elástico e o vincule ao container (Lembre-se, só é possivel alocar 5 IP's fixos por região)
 4. Acesse a máquina
