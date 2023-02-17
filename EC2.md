@@ -33,7 +33,7 @@
     CMD ["yarn", "run", "start"]
     ````
 
-    - 7.2 docker-compose: 
+    - 7.2 docker-compose [ a api deve estar rodando na portas 3000 ou 3333, obrigatóriamente]: 
     ````
     version: '2.1'
     services:
