@@ -1,6 +1,10 @@
 # Criando uma máquina ec2
 ---
 
+## NGINX
+---
+    [ request http/https -> 80/443 -> nginx -> 3333 -> api ]
+
 1. Selecione uma AMI do tipo ubuntu
     - Selecione um grupo de segurança que possuí as seguintes portas livres para todos os IP's (IPV6 -> ::/0 | IPV4 -> 0.0.0.0/0)
     - As portas devem ser do protocolo tipo TCP, e acessíveis para endereços IPV6 e IPV4 (cadastre a mesma porta duas vezes, uma para IPV6 e outra IPV4)
