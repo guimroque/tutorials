@@ -12,7 +12,9 @@
         - 1.2.3: Para gerar um certificado, acesse o serviço Certificate Manager e solicite um novo certificado, será gerado um registro do tipo CNAME que voce deve adicionar como record no domínio pretendido do route53 para a aws validar o certificado solicitado (Recomendo que solicite um certificado coringa do tipo ` *.domain.com`, para que voce possa usar o mesmo certificado mais de uma vez).
         - 1.2.4: Siga as etapas 1.1 desse tutorial
 2. Acesse sua máquina via ssh
-    - 2.1: Instale o certbot: https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal
+    - 2.1: Instale o certbot: https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal 
+        - 2.1.1 Até o comando `sudo certbot --nginx`
+        - 2.1.2 Verifique a renovação `sudo certbot renew --dry-run`
     - 2.2: Execute `certbit`
         ````
         sudo apt install python3-certbot-nginx
