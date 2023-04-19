@@ -15,7 +15,7 @@
     - 2.1: Instale o certbot: https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal 
         - 2.1.1 Até o comando `sudo certbot --nginx`
         - 2.1.2 Verifique a renovação `sudo certbot renew --dry-run`
-    - 2.2: Execute `certbit`
+    - 2.2: Execute
         ````
         sudo apt install python3-certbot-nginx
         ````
