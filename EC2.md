@@ -22,7 +22,7 @@
 5. Instale os requisitos necessários na máquina
     ````
     sudo apt update
-    sudo apt install git docker docker-compose nginx
+    sudo apt install git docker docker-compose nginx docker.io
     ````
     - 5.1: Nessa etapa voce consegue acessar a máquina e ver a mensagem de boas vindas do nginx
         - 5.1.1: acesse no navegador pelo IP elastico vinculado a máquina
